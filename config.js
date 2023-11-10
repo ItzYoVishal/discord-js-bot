@@ -7,7 +7,6 @@ module.exports = {
   },
   INTERACTIONS: {
     SLASH: false, // Should the interactions be enabled
-    CONTEXT: false, // Should contexts be enabled
     GLOBAL: false, // Should the interactions be registered globally
     TEST_GUILD_ID: "xxxxxxxxxxx", // Guild ID where the interactions should be registered. [** Test you commands here first **]
   },
@@ -29,12 +28,6 @@ module.exports = {
 
   // PLUGINS
 
-  AUTOMOD: {
-    ENABLED: false,
-    LOG_EMBED: "#36393F",
-    DM_EMBED: "#36393F",
-  },
-
   DASHBOARD: {
     enabled: false, // enable or disable dashboard
     baseURL: "http://localhost:8080", // base url
@@ -50,56 +43,8 @@ module.exports = {
     MAX_BEG_AMOUNT: 2500, // maximum coins to be received when beg command is used
   },
 
-  MUSIC: {
-    ENABLED: false,
-    IDLE_TIME: 60, // Time in seconds before the bot disconnects from an idle voice channel
-    MAX_SEARCH_RESULTS: 5,
-    DEFAULT_SOURCE: "SC", // YT = Youtube, YTM = Youtube Music, SC = SoundCloud
-    // Add any number of lavalink nodes here
-    // Refer to https://github.com/freyacodes/Lavalink to host your own lavalink server
-    LAVALINK_NODES: [
-      {
-        host: "localhost",
-        port: 2333,
-        password: "youshallnotpass",
-        id: "Local Node",
-        secure: false,
-      },
-    ],
-  },
-
-  GIVEAWAYS: {
-    ENABLED: false,
-    REACTION: "🎁",
-    START_EMBED: "#FF468A",
-    END_EMBED: "#FF468A",
-  },
-
-  IMAGE: {
-    ENABLED: false,
-    BASE_API: "https://strangeapi.fun/api",
-  },
-
   INVITE: {
     ENABLED: false,
-  },
-
-  MODERATION: {
-    ENABLED: false,
-    EMBED_COLORS: {
-      TIMEOUT: "#102027",
-      UNTIMEOUT: "#4B636E",
-      KICK: "#FF7961",
-      SOFTBAN: "#AF4448",
-      BAN: "#D32F2F",
-      UNBAN: "#00C853",
-      VMUTE: "#102027",
-      VUNMUTE: "#4B636E",
-      DEAFEN: "#102027",
-      UNDEAFEN: "#4B636E",
-      DISCONNECT: "RANDOM",
-      MOVE: "RANDOM",
-    },
   },
 
   PRESENCE: {
@@ -107,12 +52,6 @@ module.exports = {
     STATUS: "online", // The bot's status [online, idle, dnd, invisible]
     TYPE: "WATCHING", // Status type for the bot [PLAYING | LISTENING | WATCHING | COMPETING]
     MESSAGE: "{members} members in {servers} servers", // Your bot status message
-  },
-
-  STATS: {
-    ENABLED: false,
-    XP_COOLDOWN: 5, // Cooldown in seconds between messages
-    DEFAULT_LVL_UP_MSG: "{member:tag}, You just advanced to **Level {level}**",
   },
 
   SUGGESTIONS: {
